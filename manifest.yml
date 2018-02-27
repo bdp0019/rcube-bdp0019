@@ -5,5 +5,5 @@ applications:
   domain: mybluemix.net
   name: umphrda-rcube 
   host: umphrda-rcube
-  disk_quota: 1024M
+  disk_quota: 1024M  
   buildpack: python_buildpack 
