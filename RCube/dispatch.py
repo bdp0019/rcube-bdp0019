@@ -1,4 +1,4 @@
 
 
-def dispatch(parm=None):
+def dispatch(parm={}):
     return parm
