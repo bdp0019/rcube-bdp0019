@@ -1,7 +1,6 @@
 import os
 from flask import Flask, request
 import RCube.dispatch as RCube
-from StdSuites.AppleScript_Suite import result
 
 app = Flask(__name__)
 
