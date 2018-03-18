@@ -3,7 +3,7 @@ applications:
   memory: 128M
   instances: 1
   domain: mybluemix.net
-  name: umphrda-rcube 
-  host: umphrda-rcube
+  name: bdp0019-rcube 
+  host: bdp0019-rcube
   disk_quota: 1024M  
   buildpack: python_buildpack 
