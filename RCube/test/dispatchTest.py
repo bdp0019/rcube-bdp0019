@@ -144,10 +144,6 @@ class dispatchTest(unittest.TestCase):
         result = RCube.dispatch(inputParm)
         finalResult = result['cube']
         cube = [1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 2, 2, 5, 2, 2, 5, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 6, 4, 4, 6, 4, 4, 6, 5, 5, 5, 5, 5, 5, 4, 4, 4, 2, 2, 2, 6, 6, 6, 6, 6, 6]
-        print('Good Cube:')
-        print(cube)
-        print('Returned Cube:')
-        print(finalResult)
         self.assertEquals(cube, finalResult)
         
     def test101_002_ShouldReturnRotatedCubeFaceFbackwards(self):
@@ -362,6 +358,22 @@ class dispatchTest(unittest.TestCase):
         
     
         
+    def test101_023_ShouldReturnStatusOfErrorOnCheckOnCubeOfIncorrectSize(self):    #done
+        inputParm = {'op' :'check', 'cube' : [2, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6]}
+        result = RCube.dispatch(inputParm)
+        self.assertEquals('error:',result['status'][0:6])
         
+        
+    
+    def test101_024_ShouldReturnStatusOfErrorOnCheckOnMissingCube(self):    #done
+        inputParm = {'op' :'check'}
+        result = RCube.dispatch(inputParm)
+        self.assertEquals('error:',result['status'][0:6])
+    
+    
+    
+    
+    
+    
         
     

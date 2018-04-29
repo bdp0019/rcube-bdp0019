@@ -1315,7 +1315,7 @@ def checkForSpots(cube):                ####    done
     sizeOfRadius = int(math.sqrt(sizeOfSideOfCube))
     
     
-    if(sizeOfRadius%2 == 0):
+    if(sizeOfRadius == 2):
         return False
     
     #check 1st half of 1st face for equal
@@ -1544,7 +1544,7 @@ def checkForCross(cube):                #######    working on this one now
     sizeOfSideOfCube = sizeOfWholeCube / 6
     sizeOfRadius = int(math.sqrt(sizeOfSideOfCube))
     
-    if(sizeOfRadius%2 == 0):
+    if(sizeOfRadius == 2):
         return False
     
     
